@@ -1,0 +1,94 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      'name',
+      'size',
+      'price',
+      'quantity',
+      'expDate'
+    ],
+    properties: {
+      name: {
+        bsonType: 'string',
+        description: 'pizza should be a string'
+      },
+      size: {
+        bsonType: 'string',
+        description: 'it should be a string'
+      },
+      price: {
+        bsonType: 'int',
+        description: 'price should be a number is INR',
+        minimum: 70,
+        maximum: 5000
+      },
+      quantity: {
+        bsonType: 'int'
+      },
+      expDate: {
+        bsonType: 'date',
+        minimum: 1995,
+        maximum: 2014,
+        description: 'date should be in date format'
+      }
+    }
+  }
+}
+
+
+{
+  "_id": {
+    "$oid": "669966553a62109cfdd931ff"
+  },
+  "name": "onion ",
+  "size": "small",
+  "price": 100,
+  "quantity": 2,
+  "expDate": {
+    "$date": "1970-01-01T00:00:01.989Z"
+  },
+  "discout": "20%"
+}
+{
+  "_id": {
+    "$oid": "669966553a62109cfdd93200"
+  },
+  "name": "onion",
+  "size": "medium",
+  "price": 180,
+  "quantity": 3,
+  "expDate": {
+    "$date": "1970-01-01T00:00:02.015Z"
+  },
+  "discount": "12%"
+}
+{
+  "_id": {
+    "$oid": "669966553a62109cfdd93201"
+  },
+  "name": "onion",
+  "size": "large",
+  "price": 250,
+  "quantity": 1,
+  "expDate": {
+    "$date": "1970-01-01T00:00:01.986Z"
+  },
+  "discount": "11%"
+}
+
+{
+  "_id": {
+    "$oid": "669966553a62109cfdd93204"
+  },
+  "name": "corn",
+  "size": "large",
+  "price": 250,
+  "quantity": 5,
+  "expDate": {
+    "$date": "1970-01-01T00:00:01.991Z"
+  },
+  "discount": "2%"
+}
+
+
